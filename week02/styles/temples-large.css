@@ -1,0 +1,31 @@
+/* Media Screen */
+@media screen and (min-width: 900px){
+    
+    /* Temples */
+    .grid-temples{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.1em;
+    }
+
+    /* Flex container for header */
+    header {
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Space between items */
+    }
+
+    /*Nav Rules for Big Size Screen */
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li{
+        display: block;
+        flex: 1 1 100%;
+    }
+}

@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* General Application */
 body{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -9,18 +11,120 @@ body{
     line-height: 1.6;
 }
 
+/* Footer styles */
+header, footer{
+    background-color: #22577A;
+}
+
+/* Header & Navigation */
 header{
-    background-color: #2176FF;
-    color: #FBFFFE;
-    padding: 1em 0;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu{
+    background-color: #22577A;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X";
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+ul.navigation{
+    margin: 0;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation li a{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation li a:hover{
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li{
+    display: block;
+    width: 100%;
+    font-size: 2.125rem;
+}
+
+.open li a{
+    display: block;
+}
+
+.open div{
+    display: none;
+}
+
+#dynamic-title-container.open{
+    display: none;
+}
+
+/* Nav */
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    flex: 1 1 100%;
+}
+
+/* Main & Under Main */
+main h2{
     text-align: center;
 }
 
-nav ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main div{
+    justify-content: center;
 }
 
+/* Temples Grid & Articles */
+.grid-temples{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.temple-card {
+    margin: auto;
+}
+
+.temple-card p{
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}

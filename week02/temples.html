@@ -9,62 +9,68 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Temples Album</h1>
+        <div id="dynamic-title-container"><h1>Temples Album</h1></div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href=# target="_blank">Home</a></li>
+                <li><a href=# target="_blank">Old</a></li>
+                <li><a href=# target="_blank">New</a></li>
+                <li><a href=# target="_blank">Large</a></li>
+                <li><a href=# target="_blank">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
-        <figure>
-            <img src="images/aba nigeria temple.png" alt="Aba Nigeria Temple">
-            <figcaption>Aba Nigeria Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/accra ghana temple.png" alt="Accra Ghana Temple">
-            <figcaption>Accra Ghana Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/Barranquilla Columblia Temple.png" alt="Barranquilla Columblia Temple">
-            <figcaption>Barranquilla Columblia Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/bountiful utah temple.png" alt="Bountiful Utah Temple">
-            <figcaption>Bountiful Utah Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/calgary alberta temple.png" alt="Calgary Alberta Temple">
-            <figcaption>Calgary Alberta Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/freiberg germany temple.png" alt="Freiberg Gernamy Temple">
-            <figcaption>Freiberg Gernamy Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/madrid spain temple.png" alt="Madrid Spain Temple">
-            <figcaption>Madrid Spain Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/oaxaca mexico temple.png" alt="Oaxaca Mexico Temple">
-            <figcaption>Oaxaca Mexico Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/yigo guam temple.png" alt="yigo Guam Temple">
-            <figcaption>Yigo Guam Temple</figcaption>
-        </figure>
-
+        <section>
+            <h2>Home</h2>
+            <div class="grid-temples">
+                <article class="temple-card">
+                    <img src="images/aba nigeria temple.png" alt="Aba Nigeria Temple">
+                    <p>Aba Nigeria Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/accra ghana temple.png" alt="Accra Ghana Temple">
+                    <p>Accra Ghana Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/Barranquilla Columblia Temple.png" alt="Barranquilla Columblia Temple">
+                    <p>Barranquilla Columblia Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/bountiful utah temple.png" alt="Bountiful Utah Temple">
+                    <p>Bountiful Utah Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/calgary alberta temple.png" alt="Calgary Alberta Temple">
+                    <p>Calgary Alberta Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/freiberg germany temple.png" alt="Freiberg Gernamy Temple">
+                    <p>Freiberg Gernamy Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/madrid spain temple.png" alt="Madrid Spain Temple">
+                    <p>Madrid Spain Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/oaxaca mexico temple.png" alt="Oaxaca Mexico Temple">
+                    <p>Oaxaca Mexico Temple</p>
+                </article>
+                <article class="temple-card">
+                    <img src="images/yigo guam temple.png" alt="yigo Guam Temple">
+                    <p>Yigo Guam Temple</p>
+                </article>
+        </div>
+    </section>
+    
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> &#127803; Abiola Akorede &#127803; Nigeria</p>
