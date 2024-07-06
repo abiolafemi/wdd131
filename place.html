@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Title</title>
+    <meta name="description" content="Assignment to apply pseudo selector implementation in CSS. Specifically by adding an image next to a h tag"/>
+    <meta name="author" content="Abiola Akorede"/>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="icon" type="image/x-icon" href="images/nigeria.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>NIGERIA</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/gfr.webp"/>
+            <img src="images/gfr.webp" alt="farm in NIgeria">
+            
+        </picture>
+        <article class="data-box">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 923,770 km²</li>
+                <li>Population: 228,181,000 (2024 est)</li>
+                <li>Capital: Abuja</li>
+                <li>Languages: English, Yoruba, Igbo, Hausa</li>
+                <li>Currency: Naira (NGN)</li>
+                <li>Time Zone: West Africa Time (WAT) </li>
+                <li>Calling Code: +234</li>
+                <li>Internet TLD: .ng</li>
+            </ul>
+        </article>
+        <article class="weather-box">
+            <h2>Weather</h2>
+            <ul>
+                <li>Temperature: <span id="tempData">37</span>°C</li>
+                <li>Conditions: Partly Cloudy</li>
+                <li>Wind: <span id="windSpeedData">9.7</span> km/h</li>
+                <li>Wind Chill: <span id="windChillData"></span></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &#127803; Abiola Akorede &#127803; Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
