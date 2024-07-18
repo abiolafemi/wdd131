@@ -1,0 +1,49 @@
+/************************************************************
+*
+*               MEDIA SCREEN
+*
+************************************************************/
+
+@media screen and (min-width: 900px) {
+    /************************************************************
+    *
+    *               TEMPLES
+    *
+    ************************************************************/
+
+    .grid-temples {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        display: grid;
+        margin: 20px;
+        align-items: stretch; /* Align vertically the temple cards */
+    }
+
+    .temple-card {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0; /* Erase margin applied in mobile */
+    }
+
+    /*** MOBILE HEADER ***/
+    /* Flex container for header */
+    header {
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Space between items */
+    }
+
+    /*** NAV RULES FOR BIG SIZE SCREEN ***/
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,175 @@
+/************************************************************
+*
+*               GENERAL APPLICATION
+*
+************************************************************/
+:root {
+    --primary-color: green;
+    --secondary-color: white;
+
+    --heading-font: 'Kanit', sans-serif;
+    --paragraph-font: 'Rajdhani', sans-serif;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer styles */
+header, footer{
+    background-color: var(--primary-color);
+}
+
+/************************************************************
+*
+*               HEADER & NAVIGATION
+*
+************************************************************/
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--secondary-color); 
+}
+
+#menu{
+	background-color: var(--secondary-color);
+	color: var();
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before{
+	content: "☰";
+}
+
+#menu.open::before{
+	content: "X";
+}
+
+.navigation{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+ul.navigation{
+    margin: 0;
+}
+
+.navigation li{
+	display: none;
+}
+
+.navigation li a{
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation li a:hover{
+	font-weight: 700; /* strength the font to highlight the option hovered */
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li{
+	display: block;
+	width: 100%;
+    font-size: 2.125rem; /* increase size only when open class was added to the nav */
+}
+
+.open li a{
+	display: block;
+}
+
+.open div{
+    display: none; /* hide title from header when menu is opened */
+}
+
+#dynamic-title-container.open {
+    display: none;
+}
+#dynamic-title-container h1{
+    text-align: center;
+}
+
+/************************************************************
+*
+*               Nav
+*
+************************************************************/
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex: 1 1 100%;
+}
+
+/************************************************************
+*
+*               MAIN & UNDER MAIN
+*
+************************************************************/
+
+main h2{
+    text-align: center;
+}
+
+main div{
+    justify-content: center;
+}
+
+/************************************************************
+*
+*               TEMPLES GRID & ARTICLES
+*
+************************************************************/
+
+.grid-temples{
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.temple-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    width: calc(100% - 40px); /* Calculate padding substracting widht */
+    max-width: 100%; /* Assure width won't exceed container */
+    box-sizing: border-box; /* Include padding into width */
+    background-color: rgb(204, 202, 202);
+    margin-bottom: 20px;
+}
+
+.temple-card img{
+    max-width: 100%; /* Assure image won't exceed container size */
+    height: auto; /* Assure with this line and below to center image in container */
+    margin: auto;
+}
+
+span.label{
+    color:blueviolet;
+}
+
+/************************************************************
+*
+*               FOOTER
+*
+************************************************************/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
