@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Wheels | Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/brm_racing_car_18613.ico">
+</head>
+<body>
+    <div id="content">
+        <!-- PERMANENT STRUCTURE -->
+        <div class="body-background"></div>
+
+        
+
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/brm_racing_car_18613.ico" alt="Hot Wheels">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="lost-car.html">Lost car</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </header>
+        <!-- PERMANENT STRUCTURE -->
+
+        <main class="contact-main">
+
+            <div class="contact-row-master">
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <p>We appreciate your interesting on contacting us as regarding the missing vehicles. Please be patient we're working on your request.</p>
+                        <button onclick="closeModal()" class="close">&times;</button>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="myForm" onsubmit="openModal()">
+
+                        <div>
+                            <label for="fname">*Name:</label>
+                            <input id="fname" name="fname" type="text" required>
+                        </div>
+                        <div>
+                            <label for="flname">*Last name:</label>
+                            <input id="flname" name="flname" type="text" required>
+                        </div>
+                        <div>
+                            <label for="femail">*Email Address:</label>
+                            <input id="femail" name="femail" type="email" required>
+                        </div>
+                        <div>
+                            <label>*Is your Vehicle lost?:</label><br>
+                            <input type="radio" id="yes" name="fstatus" value="yes" required> <label class="forcss">Yes</label>
+                            <input type="radio" id="no" name="fstatus" value="no" required> <label class="forcss">No</label>
+                        </div>
+                        <div>
+                            <label for="fsubject">*Subject:</label>
+                            <textarea id="fsubject" name="fsubject" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send your message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-image">
+                    <img src="images/2car.jpeg" alt="">
+                </div>
+
+            </div>
+            
+        </main>
+        
+        <!-- PERMANENT STRUCTURE -->
+        <footer>
+            <h5>Hot Wheels &copy; 2024 Abiola Akorede
+                <br>Last Modification: <span id="lastModified"></span>
+                <br>Visits completed: <span id="visitQty"></span>
+            </h5>
+            <h3>
+                <a href="siteplan.html" target="_blank">Site Plan</a>
+            </h3>
+    
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="images/facebook_logo_icon_134446.png" alt="facebook icon">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/media_social_instagram_icon_228428.png" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="images/Twitter_icon-icons.com_60507.png" alt="twitter icon">
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img src="images/media_social_tiktok_icon_124256.png" alt="Tiktok icon">
+                </a>
+            </div>
+        </footer>
+        <script src="../scrpits/getdates.js" defer></script>
+        <script src="scripts/countVisits.js" defer></script>
+        <script src="scripts/formaction.js" defer></script>
+        <!-- PERMANENT STRUCTURE -->
+    </div>
+</body>
+</html>
